@@ -34,9 +34,19 @@ function check() {
         
     } else if (sum === 6) {
         window.location.href = 'b.html'; // 通常の遷移
-    } else if (sum < 4 && sum >= 1) {
+    } else if (sum === 5) {
         window.location.href = 'c.html'; // 通常の遷移
-    } else {
+    } else if (sum === 4) {
         window.location.href = 'd.html'; // 通常の遷移
+    } else if (sum === 3) {
+        window.location.href = 'e.html'; // 通常の遷移
+    } else if (sum === 2) {
+        window.location.href = 'f.html'; // 通常の遷移
+    } else if (sum === 1) {
+        window.location.href = 'g.html'; // 通常の遷移
+    } else if (sum === 0) {
+        window.location.href = 'h.html'; // 通常の遷移
+    } else {
+        window.location.href = 'index.html'; // 通常の遷移
     }
 }

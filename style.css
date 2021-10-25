@@ -137,3 +137,13 @@ footer {
     margin-top: 50px;
     text-align: center;
 }
+
+/* indexの背景に画像挿入 */
+main#first {
+    background-image: url(images/animal_usagi_nihon_nousagi.png);
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
