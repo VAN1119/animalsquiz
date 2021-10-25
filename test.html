@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>動物クイズ</title>
+    <link rel="icon" href="images/animal_usagi_nihon_nousagi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="top">
+            <h1>動物クイズ</h1>
+        </div>
+    </header>
+    <main>
+        <p class="down"></p>
+        <form id="ask" name="ask" onsubmit="check(); return false;">
+            <ul>
+                <li>
+                    <p class="question">Q.1　スペイン語で「武装したもの」を意味する"armado"に由来する動物は？</p>
+                    <div class="ans">
+                        <input class="rad" id="aa" type="radio" name="q0" value="0" required="">
+                        <label for="aa"><img src="images/animal_erimaki_tokage.png" width="200px"></label>
+                        <input class="rad" id="ab" type="radio" name="q0" value="1">
+                        <label for="ab"><img src="images/animal_armadillo.png" width="200px"></label>
+                        <input class="rad" id="ac" type="radio" name="q0" value="0">
+                        <label for="ac"><img src="images/animal_bear_panda.png" width="200px"></label>
+                        <input class="rad" id="ad" type="radio" name="q0" value="0">
+                        <label for="ad"><img src="images/animal_quokka.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.2　「オットセイ」はどれでしょう？</p>
+                    <div class="ans">
+                        <input class="rad" id="ba" type="radio" name="q1" value="0" required="">
+                        <label for="ba"><img src="images/animal_ashika_todo.png" width="200px"></label>
+                        <input class="rad" id="bb" type="radio" name="q1" value="0">
+                        <label for="bb"><img src="images/animal_zou_azarashi.png" width="200px"></label>
+                        <input class="rad" id="bc" type="radio" name="q1" value="0">
+                        <label for="bc"><img src="images/animal_ashika_sealion.png" width="200px"></label>
+                        <input class="rad" id="bd" type="radio" name="q1" value="1">
+                        <label for="bd"><img src="images/animal_otaria.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.3　時に「ミドリグマ」と呼ばれることもあるクマは？</p>
+                    <div class="ans">
+                        <input class="rad" id="ca" type="radio" name="q2" value="0" required="">
+                        <label for="ca"><img src="images/animal_bear_higuma.png" width="200px"></label>
+                        <input class="rad" id="cb" type="radio" name="q2" value="1">
+                        <label for="cb"><img src="images/animal_bear_hokkyoku.png" width="200px"></label>
+                        <input class="rad" id="cc" type="radio" name="q2" value="0">
+                        <label for="cc"><img src="images/animal_bear_malay.png" width="200px"></label>
+                        <input class="rad" id="cd" type="radio" name="q2" value="0">
+                        <label for="cd"><img src="images/animal_bear_tsukinowa.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.4　頭に切れ込みを入れて3等分にすれば、3つの頭を持ち再生する生物は？</p>
+                    <div class="ans">
+                        <input class="rad" id="da" type="radio" name="q3" value="0" required="">
+                        <label for="da"><img src="images/animal_hiru_kougaibiru.png" width="200px"></label>
+                        <input class="rad" id="db" type="radio" name="q3" value="1">
+                        <label for="db"><img src="images/animal_planaria.png" width="200px"></label>
+                        <input class="rad" id="dc" type="radio" name="q3" value="0">
+                        <label for="dc"><img src="images/animal_hiru.png" width="200px"></label>
+                        <input class="rad" id="dd" type="radio" name="q3" value="0">
+                        <label for="dd"><img src="images/animal_salpa_chain.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.5　この中で2番目に舌が長い動物は？</p>
+                    <div class="ans">
+                        <input class="rad" id="ea" type="radio" name="q4" value="0" required="">
+                        <label for="ea"><img src="images/animal_serval.png" width="200px"></label>
+                        <input class="rad" id="eb" type="radio" name="q4" value="0">
+                        <label for="eb"><img src="images/animal_ooarikui_arikui.png" width="200px"></label>
+                        <input class="rad" id="ec" type="radio" name="q4" value="1">
+                        <label for="ec"><img src="images/animal_kirin.png" width="200px"></label>
+                        <input class="rad" id="ed" type="radio" name="q4" value="0">
+                        <label for="ed"><img src="images/animal_kamonohashi.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.6　ギリシャ語で「毛深い部族」という意味の動物は？</p>
+                    <div class="ans">
+                        <input class="rad" id="fa" type="radio" name="q5" value="0" required="">
+                        <label for="fa"><img src="images/animal_lion.png" width="200px"></label>
+                        <input class="rad" id="fb" type="radio" name="q5" value="1">
+                        <label for="fb"><img src="images/animal_gorilla.png" width="200px"></label>
+                        <input class="rad" id="fc" type="radio" name="q5" value="0">
+                        <label for="fc"><img src="images/animal_mantohihi.png" width="200px"></label>
+                        <input class="rad" id="fd" type="radio" name="q5" value="0">
+                        <label for="fd"><img src="images/animal_mandrill.png" width="200px"></label>
+                    </div>
+                </li>
+                <li>
+                    <p class="question">Q.7　タイの山岳民族の間で「神が余りものを繋ぎ合わせて創造した」とされる動物は？</p>
+                    <div class="ans">
+                        <input class="rad" id="ga" type="radio" name="q6" value="0" required="">
+                        <label for="ga"><img src="images/animal_baku_beard.png" width="200px"></label>
+                        <input class="rad" id="gb" type="radio" name="q6" value="1">
+                        <label for="gb"><img src="images/animal_baku_malay.png" width="200px"></label>
+                        <input class="rad" id="gc" type="radio" name="q6" value="0">
+                        <label for="gc"><img src="images/animal_baku_yama.png" width="200px"></label>
+                        <input class="rad" id="gd" type="radio" name="q6" value="0">
+                        <label for="gd"><img src="images/animal_baku_america_brazil.png" width="200px"></label>
+                    </div>
+                </li>
+            </ul>
+            <div class="last">
+                <input type="submit" value="回答" class="judge" />
+                <p class="lastcheck">全ての問題に回答してください</p>
+            </div>
+        </form>    
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <small>&copy;2021 Ban</small>
+    </footer>
+</body>
+</html>
